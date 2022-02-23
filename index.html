@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  background-image: url(gambar2.png);
+  background-size: cover;
+  background-position: 0 -150px ;
+  border-bottom: 3px solid black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: skyblue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #3151C6;
+  height: 300px; 
+  background-image: url(gamba2.png);
+  background-size: co;
+  background-position: 0 0;
+  color: white;
+  border-left: 3px solid black;
+  /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Angga Pratama</h2>
+  <h2>2005176007</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Media Sosial</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Tentang Saya</h1>
+    <p>Nama saya Angga Pratama, saya terlahir sebagai anak pertama. Saya lahir di kota Samarinda pada tanggal 16 Februari 2003. Sekarang saya berusia 19 tahun. Saya adalah mahasiswa universitas Mulawarman, Samarinda. Tepatnya fakultas pendidikan komputer.</p>
+    <p>Sekarang saya sudah di semester empat. Saya sangat suka sesuatu yang baru dan sedikit menantang. Makanan kesukaan saya adalah ayam tepung. Olahraga kesukaan saya adalah futsal.</p>
+    <p>Di keluarga saya, terdapat 4 anggota keluarga. Bapak, ibu, adik, serta saya. Warna kesukaan saya adalah hitam dan putih. Saya tinggal di Loa Bakung. Rumah saya berjarak lumayan jauh dengan kampus saya.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Latihan Dasar HTML dan CSS - Pemrogaman Web 1</p>
+</footer>
+
+</body>
+</html>
+
